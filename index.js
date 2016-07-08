@@ -7,7 +7,9 @@ const sheetLoader = require('./bertha-loader');
 const bulkTemplater = require('./bulk-nunjucks');
 
 const s3 = new aws.S3();
-const s3Bucket = 'bertha-templater';
+let s3Bucket = 'bertha-templater';
+if(process.env.S3_BUCKET) s3Bucket = process.env.S3_BUCKET;
+
 
 const myLoader = sheetLoader()
     .id('1XqXuzg62NiXNxuT1MkodvLpy6V_t80gjyFnXvffByL8')
