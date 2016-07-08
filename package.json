@@ -1,0 +1,16 @@
+{
+  "name": "bertha-templater",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.4.6",
+    "node-fetch": "^1.5.3",
+    "nunjucks": "^2.4.2"
+  }
+}

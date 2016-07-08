@@ -1,0 +1,12 @@
+<html>
+    <table>
+        <thead>
+            <tr>{% for column in dataColumns %}<th>{{ column }}</th>{% endfor %}<th>link</th></tr>
+        </thead>
+        <tbody>{% for row in data %}
+            <tr>{% for column in dataColumns %}
+                <td>{{ row[column] }}</td>{% endfor %}<td><a href="item-{{loop.index0}}.html">link</a></td>
+            </tr>{% endfor %}
+        </tbody>
+    </table>
+</html>
