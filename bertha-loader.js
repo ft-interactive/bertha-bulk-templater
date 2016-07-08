@@ -1,4 +1,5 @@
-var fetch = require('node-fetch');
+'use strict';
+const fetch = require('node-fetch');
 
 module.exports = function(){
     let sheetId = '';
